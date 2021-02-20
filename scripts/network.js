@@ -74,7 +74,7 @@ if (networkEnabled) {
             cachedUTXOs.push(data.unspent_outputs[i]);
           }
           // Update the GUI with the newly cached UTXO set
-          balance = getBalance();
+          balance = getBalance(true);
           document.getElementById("guiBalance").innerHTML = balance;
         } else {
           //Temporary message for when there are alot of inputs
