@@ -366,15 +366,23 @@
       document.getElementById('prefix').value = "";
       document.getElementById('prefix').style.display = 'none';
       if (toggle === "Access My Wallet") {
+        if (!hasEncryptedWallet()) {
+          // No local wallet found
+            document.getElementById("generateWallet").style.display = 'none';
+            document.getElementById("importWallet").style.display = 'block';
+            document.getElementById("wToggle").innerHTML = "Create A New Wallet";
+            return;
+        }
+        // We have a local wallet! Display the decryption prompt
         decryptWallet().then(hasWallet => {
           if (hasWallet) {
             document.getElementById("generateWallet").style.display = 'none';
             document.getElementById("importWallet").style.display = 'block';
             document.getElementById("wToggle").innerHTML = "Create A New Wallet";
           } else {
-            document.getElementById("generateWallet").style.display = 'none';
-            document.getElementById("importWallet").style.display = 'block';
-            document.getElementById("wToggle").innerHTML = "Create A New Wallet";
+            document.getElementById("generateWallet").style.display = 'block';
+            document.getElementById("importWallet").style.display = 'none';
+            document.getElementById("wToggle").innerHTML = "Access My Wallet";
           }
         }).catch(e => {
           document.getElementById("generateWallet").style.display = 'none';
