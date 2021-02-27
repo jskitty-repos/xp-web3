@@ -97,8 +97,6 @@ if (networkEnabled) {
         if (data.length === 64) {
           console.log('Transaction sent! ' + data);
           document.getElementById("transactionFinal").innerHTML = ('<h4 style="color:green">Transaction sent! ' + data + '</h4>');
-          document.getElementById("loadSimpleTransactions").style.display = 'block';
-          document.getElementById("simpleTransactions").style.display = 'none';
           document.getElementById("address1s").innerHTML = '';
           document.getElementById("value1s").innerHTML = '';
         } else {
