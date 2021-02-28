@@ -14,7 +14,7 @@ if (networkEnabled) {
       var typeNumber = 4;
       var errorCorrectionLevel = 'L';
       var qr = qrcode(typeNumber, errorCorrectionLevel);
-      qr.addData('zenzo:' + data['addrStr']);
+      qr.addData('XP:' + data['addrStr']);
       qr.make();
       document.getElementById("addrStrQR").innerHTML = qr.createImgTag();
       document.getElementById("addrStr").innerHTML = data['addrStr'];
@@ -42,7 +42,7 @@ if (networkEnabled) {
   }
   var getBlockCount = function() {
     var request = new XMLHttpRequest();
-    request.open('GET', "https://arcade.zenzo.io/api/v1/web3/getblockcount", true);
+    request.open('GET', "https://stats.experiencepoints.io/api/v1/web3/getblockcount", true);
     request.onload = function () {
       let data = Number(this.response);
       // If the block count has changed, refresh all of our data!
@@ -59,7 +59,7 @@ if (networkEnabled) {
   }
   var getUnspentTransactions = function () {
     var request = new XMLHttpRequest()
-    request.open('GET', "https://chainz.cryptoid.info/znz/api.dws?q=unspent&active=" + publicKeyForNetwork + "&key=fb4fd0981734", true)
+    request.open('GET', "https://chainz.cryptoid.info/xp/api.dws?q=unspent&active=" + publicKeyForNetwork + "&key=fb4fd0981734", true)
     request.onload = function () {
       data = JSON.parse(this.response)
       if (!data.unspent_outputs || data.unspent_outputs.length === 0) {
@@ -91,7 +91,7 @@ if (networkEnabled) {
   var sendTransaction = function (hex) {
     if (typeof hex !== 'undefined') {
       var request = new XMLHttpRequest()
-      request.open('GET', 'https://arcade.zenzo.io/api/v1/web3/submittx?tx=' + hex, true)
+      request.open('GET', 'https://stats.experiencepoints.io/api/v1/web3/submittx?tx=' + hex, true)
       request.onload = function () {
         data = this.response;
         if (data.length === 64) {

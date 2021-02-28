@@ -4,7 +4,8 @@ html{
 }
 
 body {
-  background-color:#f2f4fa;
+  background-color:#000000;
+  color: white !important;
 }
 textarea,input{
   background-color:	#fff;
@@ -130,7 +131,7 @@ input::-moz-focus-inner {
 .tabcontent {
   font-family:sans-serif;
   display: none;
-  background-color:#ffffff;
+  background-color:#063200;
   padding: 6px 12px;
   border-radius: 8px;
 }
@@ -138,14 +139,28 @@ input::-moz-focus-inner {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #0b2840;
-  color: #96a8b6;
+  background-color: #021b00;
+  color: #96b69b;
   height: 3rem;
   text-align: center;
 }
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.active {
+  color: #009C00 !important;
+}
 
 .navbarSpecial{
-  background-color:#ffffff;
+  background: linear-gradient(90deg, #021b00 50%, #009C00 95%);
+  border-bottom-style: solid;
+  border-bottom-color: #009C00;
+  border-bottom-width: 2px;
 }
 
 /*Breakpoints */

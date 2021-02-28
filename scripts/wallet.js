@@ -83,7 +83,7 @@ var randArr = new Uint8Array(32) //create a typed array of 32 bytes (256 bits)
 if (debug) {
   document.getElementById('Debug').innerHTML = "<b> DEBUG MODE </b>";
 }
-document.getElementById('dcfooter').innerHTML = '© 2021 ZENZO Ecosystem - All rights reserved. <br><a href="https://github.com/ZENZO-Ecosystem/zenzo-web3">ZENZO Web 3.0 - v' + wallet_version + '</a>';
+document.getElementById('dcfooter').innerHTML = '© 2021 eXperiencePoints - All rights reserved. <br><a href="https://github.com/jskitty-repos/xp-web3">XP Web 3.0 - v' + wallet_version + '</a>';
 //Wallet Import
 importWallet = function (newWif = false) {
   if (walletAlreadyMade != 0) {
@@ -163,7 +163,7 @@ importWallet = function (newWif = false) {
     qr.addData(pubKey);
     qr.make();
     document.getElementById('PublicQR').innerHTML = qr.createImgTag();
-    document.getElementById('ModalQRLabel').innerHTML = 'zenzo:' + pubKey;
+    document.getElementById('ModalQRLabel').innerHTML = 'XP:' + pubKey;
     let modalQR = document.getElementById('ModalQR');
     modalQR.innerHTML  = qr.createImgTag();
     modalQR.firstChild.style.width = "100%";
@@ -301,18 +301,18 @@ generateWallet = async function (strPrefix = false) {
       var typeNumber = 4;
       var errorCorrectionLevel = 'L';
       var qr = qrcode(typeNumber, errorCorrectionLevel);
-      qr.addData('zenzo:' + privateKeyWIF);
+      qr.addData('XP:' + privateKeyWIF);
       qr.make();
       document.getElementById('PrivateQR').innerHTML = qr.createImgTag();
       document.getElementById('PrivateQR').style.display = 'none';
       var typeNumber = 4;
       var errorCorrectionLevel = 'L';
       var qr = qrcode(typeNumber, errorCorrectionLevel);
-      qr.addData('zenzo:' + pubKey);
+      qr.addData('XP:' + pubKey);
       qr.make();
       document.getElementById('PublicQR').innerHTML = qr.createImgTag();
       document.getElementById('PublicQR').style.display = 'block';
-      document.getElementById('ModalQRLabel').innerHTML = 'zenzo:' + pubKey;
+      document.getElementById('ModalQRLabel').innerHTML = 'XP:' + pubKey;
       let modalQR = document.getElementById('ModalQR');
       modalQR.innerHTML  = qr.createImgTag();
       modalQR.firstChild.style.width = "100%";

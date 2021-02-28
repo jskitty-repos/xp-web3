@@ -7,26 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <title>ZENZO Web 3.0 wallet</title>
+  <title>XP Web 3.0 wallet</title>
   <meta name="description" content="An open-source, cryptographically-secure web wallet designed for the future of self-sovereign and adoption-friendly cryptocurrency.">
   <meta name="keywords" content="web,wallet,webwallet,crypto,cryptocurrency,opensource,oss">
   <meta property="og:image" content="assets/logo.png">
-  <meta property="og:site" content="ZENZO Web 3.0 wallet">
+  <meta property="og:site" content="XP Web 3.0 wallet">
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <meta name="msapplication-TileColor" content="#8778dc">
-  <meta name="theme-color" content="#8778dc">
-  <link rel="canonical" href="https://arcade.zenzo.io/index.html">
+  <meta name="msapplication-TileColor" content="#009C00">
+  <meta name="theme-color" content="#009C00">
+  <link rel="canonical" href="https://stats.experiencepoints.io/">
   <meta name="description" content="An open-source, cryptographically-secure web wallet designed for the future of self-sovereign and adoption-friendly cryptocurrency.">
   <meta name="keywords" content="web,wallet,webwallet,crypto,cryptocurrency,opensource,oss">
   <meta name="twitter:site" content="@zenzo_ecosystem">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ZENZO Web 3.0 wallet">
+  <meta name="twitter:title" content="XP Web 3.0 wallet">
   <meta name="twitter:description" content="An open-source, cryptographically-secure web wallet designed for the future of self-sovereign and adoption-friendly cryptocurrency.">
   <meta name="twitter:image" content="assets/logo.png">
-  <meta property="og:title" content="ZENZO Web 3.0 wallet">
+  <meta property="og:title" content="XP Web 3.0 wallet">
   <meta property="og:description" content="An open-source, cryptographically-secure web wallet designed for the future of self-sovereign and adoption-friendly cryptocurrency.">
-  <meta property="og:url" content="https://arcade.zenzo.io/index.html">
-  <meta property="og:site_name" content="ZENZO Web 3.0 wallet">
+  <meta property="og:url" content="https://stats.experiencepoints.io/">
+  <meta property="og:site_name" content="XP Web 3.0 wallet">
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="assets/logo.png">
 
@@ -45,8 +45,8 @@
       // These below params share the same names as the CPP params, so finding and editing these is easy-peasy!
 
       /* chainparams */
-      const PUBKEY_ADDRESS = 81;
-      const SECRET_KEY     = 215;
+      const PUBKEY_ADDRESS = 55;
+      const SECRET_KEY     = 73;
   </script>
 </head>
 
@@ -54,7 +54,7 @@
   <div id="page-container">
     <div id="content-wrap">
       <nav class="navbar navbar-expand-lg sticky-top navbar-light navbarSpecial">
-        <img class="navbar-brand noselect" src='assets/logo.png' alt="ZENZO"
+        <img class="navbar-brand noselect" src='assets/logo.png' alt="XP"
           style='vertical-align: middle;width:150px;display:inline'>
         <button id="navbarToggler" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,20 +76,20 @@
       </nav>
       <br>
       <div style='display:none;background-color:red;margin-bottom:15px;' id='outdated'>WARNING: your version is outdated,
-        please update to the newest stable version at the <a href='https://github.com/ZENZO-Ecosystem/zenzo-web3/releases'>ZENZO Web 3.0 Github</a>
+        please update to the newest stable version at the <a href='https://github.com/jskitty-repos/xp-web3/releases'>XP Web 3.0 Github</a>
       </div>
       
       <div class="modal fade" id="qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="max-width: 90%">
             <div class="modal-header">
-              <h5 class="modal-title" id="qrModalLabel">Address QR</h5>
+              <h5 style="color: black;" class="modal-title" id="qrModalLabel">Address QR</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span style="color: black;" aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body"  style="text-align: center;">
-              <p id="ModalQRLabel" style="font-family: monospace; font-size: small; position: relative; top: 20px;"></p>
+              <p id="ModalQRLabel" style="color: black; font-family: monospace; font-size: small; position: relative; top: 20px;"></p>
               <div id="ModalQR" style="width: 100%; height: auto;"></div>
             </div>
           </div>
@@ -100,19 +100,19 @@
         <div class="row no-gutters">
           <div class='col-md-1'>
             <div style='float:center'>
-              <div id='Debug' style='color:#00b7ff'></div>
-              <div id='Network' style='color:#00b7ff'></div>
+              <div id='Debug' style='color:#009C00'></div>
+              <div id='Network' style='color:#009C00'></div>
             </div>
           </div>
           <div class='col-md-10'>
             <div id="home" class="tabcontent">
               <center>
-                <h3>Welcome to the ZENZO Web 3.0 wallet!</h3>
+                <h3>Welcome to the XP Web 3.0 wallet!</h3>
               </center>
               <h4>Be your own Bank!</h4>
               <h5 style='text-indent: 30px;'>
-                The ZENZO web 3.0 wallet has <b>no custody</b> over your funds. You are in full ownership of your keys and your ZNZ.
-                With this wallet, you can use ZENZO across the web, on-the-go, with full safety of your funds in your very 
+                The XP Web 3.0 wallet has <b>no custody</b> over your funds. You are in full ownership of your keys and your XP.
+                With this wallet, you can use XP across the web, on-the-go, with full safety of your funds in your very 
                 own protection. The wallet has many customization options, can be downloaded and ran locally, has a dedicated 
                 offline mode, and can be cloned directly from GitHub!
               </h5>
@@ -121,7 +121,7 @@
               <h5 style='text-indent: 30px;'>
                 With our built-in tools, you can generate cryptographically-secure addresses with the power of your browser and 
                 hardware. You can generate 'random' addresses or you can generate vanity addresses with your own custom prefixes. 
-                In addition, <b>all</b> keys are entirely universal and can be imported/exported directly to and from ZENZO Core to this 
+                In addition, <b>all</b> keys are entirely universal and can be imported/exported directly to and from XP Core to this 
                 web wallet.
               </h5>
             </div>
@@ -153,7 +153,7 @@
               <br>
               <div id="guiWallet" style="display: none;">
                 <div id="banners" style="height: 160px; width: 100%; display: flex; flex-wrap: wrap; color: white; margin-bottom: 250px;">
-                  <div class="graybox" style="height: 99%; width: 300px; background: linear-gradient(50deg, rgb(175, 170, 255) 0%, rgb(112, 112, 227) 80%);"">
+                  <div class="graybox" style="height: 99%; width: 300px; background: linear-gradient(50deg, rgb(90, 90, 90) 0%, #075E07 100%);"">
                     <h3 class="noselect" style="margin: 10px; position: relative; left: 165px; cursor: default;">Address</h3>
                     <br>
                     <div>
@@ -165,11 +165,11 @@
                       </b>
                     </div>
                   </div>
-                  <div class="graybox" style="height: 99%; width: 300px; background: linear-gradient(50deg, rgba(112,112,227,1) 0%, rgba(45,181,215,1) 90%);"">
+                  <div class="graybox" style="height: 99%; width: 300px; background: linear-gradient(50deg, #075E07 10%, #007600 100%);"">
                     <h3 class="noselect" style="margin: 10px; position: relative; left: 135px; cursor: default;">Balance &nbsp;&nbsp;<span id="balanceReload" class="reload noselect" onclick="refreshChainData()">&#x21bb;</span></h3>
                     <div>
                       <div style="display: inline-block; position: relative; width: 65px; height: 65px; left: 30px; bottom: 5px; border-style: solid; border-radius: 1000px; border-width: 3px; background-size: cover; background-image: url(assets/logo-circle.png);"></div>
-                      <p id="guiBalanceBox" style="display: inline-block; width: 50%; position: relative; right: -70px; bottom: 25px; font-size: x-large;"><b id="guiBalance">---</b> ZNZ</p>
+                      <p id="guiBalanceBox" style="display: inline-block; width: 50%; position: relative; right: -70px; bottom: 25px; font-size: x-large;"><b id="guiBalance">---</b> XP</p>
                     </div>
                   </div>
                 </div>
@@ -237,7 +237,7 @@
                   <h2>Signed Raw Transaction</h2>
                   <textarea rows="15" cols="70" id="rawTrx"></textarea>
                   <h3>Don't understand how this works? <a target='_blank'
-                      href='https://github.com/ZENZO-Ecosystem/zenzo-web3#transaction'>Tutorial Here</a>
+                      href='https://github.com/jskitty-repos/xp-web3#transaction'>Tutorial Here</a>
                     <h4>Advanced Details: <br>locktime is set to 0, sequence is set to max. SIGHASH_ALL option is chosen
                       for signing raw Transaction.</h4>
                 </div>
@@ -247,7 +247,7 @@
               <form action="javascript:setExplorer()">
                 <label for="explorer">Choose an explorer:</label>
                 <select id="explorer" name="explorer">
-                  <option value="cryptoid">https://chainz.cryptoid.info/znz</option>
+                  <option value="cryptoid">https://chainz.cryptoid.info/xp</option>
                   <option value="custom">custom (In Development)</option>
                 </select>
                 <br>
@@ -492,20 +492,20 @@
       }
       let nBalance = getBalance();
       if (value > nBalance) return alert("Balance is too small! (" + nBalance + " - " + value + " = " + (nBalance - value).toFixed(8) + ")");
-      console.log("Constructing TX of value: " + value + " ZNZ");
+      console.log("Constructing TX of value: " + value + " XP");
       // Loop our cached UTXOs and construct a TX
       trx = bitjs.transaction();
       let txValue = 0;
       for (const UTXO of cachedUTXOs) {
         if (txValue > value) {
           // Required Coin Control value met, yahoo!
-          console.log("Coin Control: TX Constructed! Selected " + trx.inputs.length + " input(s) (" + txValue + " ZNZ)");
+          console.log("Coin Control: TX Constructed! Selected " + trx.inputs.length + " input(s) (" + txValue + " XP)");
           break;
         }
         trx.addinput(UTXO.tx_hash, UTXO.tx_ouput_n, UTXO.script);
         txValue += Number((UTXO.value / 100000000).toFixed(8));
         txValue = Number(txValue.toFixed(8));
-        console.log("Coin Control: Selected input " + UTXO.tx_hash.substr(0, 6) + "(" + UTXO.tx_ouput_n + ")... (Added " + (UTXO.value / 100000000).toFixed(8) + " ZNZ - Total: " + txValue + ")");
+        console.log("Coin Control: Selected input " + UTXO.tx_hash.substr(0, 6) + "(" + UTXO.tx_ouput_n + ")... (Added " + (UTXO.value / 100000000).toFixed(8) + " XP - Total: " + txValue + ")");
       }
 
       if (address != '' && value != '') {
